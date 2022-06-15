@@ -1,0 +1,596 @@
+header {
+    display: grid;
+    grid-template-columns: auto-fit;
+    z-index: 99;
+    position: relative;
+    top: 0;
+    padding: 5rem 12rem;
+
+    & strong a {
+        font-size: 2rem;
+        color: black;
+        text-shadow: #AAA8A6;
+    }
+    & ul a {
+        padding: 0 2rem;
+        font-size: 1.2rem;
+        letter-spacing: 1.2;
+        &:hover {
+            color: gold;
+        }
+    }
+    
+}
+
+h3 {
+    font-size: 4rem;
+    padding: 1rem 0;
+}
+
+main {
+    margin-top: -130px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    grid-auto-rows: 200px;
+    grid-template-areas: "side-l-1 side-r-1"
+                         "side-l-1 side-r-1"
+                         "side-l-1 side-r-1"
+                         "side-l-1 side-r-1"
+                         "side-l-2 side-r-2"
+                         "side-l-2 side-r-2"
+                         "side-l-3 side-r-3"
+                         "side-l-3 side-r-3"
+                         "side-l-4 side-r-4"
+                         "side-l-4 side-r-4"
+                         "side-l-5 side-r-5"
+                         "side-l-5 side-r-5"
+                         "side-l-5 side-r-5"
+                         "side-l-6 side-r-6"
+                         "side-l-6 side-r-6"
+                         "side-l-6 side-r-6"
+                         "side-l-6 side-r-6"
+                         "map map"
+                         "map map"
+                         "map map";
+    justify-content: center;
+    
+    z-index: -1;
+
+}
+
+p {
+    font-size: 1.5rem;
+        color: #AAA8A6;
+        line-height: 1.5;
+        padding: 1rem 0;
+}
+
+img {
+    width: 100%;
+
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 2rem 0;
+}
+
+
+.side-l-1 {
+    grid-area: side-l-1;
+    background-image: url("/Users/joel/Downloads/CODING/Test/TA-STYLE-CSS-Grid-THaaao/block-BHaacx/home-img.jpg");
+    background-size:stretch;
+    background-position:center;
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+
+}
+
+.side-r-1 {
+    grid-area: side-r-1;
+    background-color: #F5E3D6;
+    & h2 {
+        font-size: 3.5rem;
+        font-weight: 300;
+        padding: 2rem 0;
+        strong {
+            font-weight: 700;
+        }
+
+    }
+    & small, & p {
+        font-size: 1.5rem;
+        color: #AAA8A6;
+        line-height: 1.5;
+    }
+
+    & .btn {
+        color: black;
+        background-color: transparent;
+        border-radius: 2.5rem;
+        border: 2px solid black;
+        margin: 4rem 0;
+        padding: 1.5rem 3rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+
+    }
+}
+
+.side-l-2 {
+    grid-area: side-l-2;
+    & small {
+        color: gold;
+        font-size: 1.5rem;
+        padding-bottom: 2rem;
+    }
+    
+}
+
+.side-r-2 {
+    grid-area: side-r-2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ECAE4E;
+    & figure {
+        width: 50%;
+        height: 100%;
+        background-image: url("/Users/joel/Downloads/CODING/Test/TA-STYLE-CSS-Grid-THaaao/block-BHaacx/assets/media/about-img.jpg");
+        background-size: 300%;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+    & .skill-cont {
+        width: 50%;
+        color: white;
+        & small {
+            font-size: 1.2rem;
+            font-weight: lighter;
+            padding: 1rem 0;
+        }
+    }
+
+    & .skills {
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    & .box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: black;
+        font-weight: bold;
+        & h5 {
+            font-size: 1.2rem;
+            
+        }
+
+        & > div {
+            width: 100%;
+            height: 4px;
+            content: "";
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            background-image: linear-gradient(to right, black 90%, white 10%);
+        } 
+    } 
+
+    & .back-end > div {
+            background-image: linear-gradient(to right, black 70%, white 30%);
+
+    }
+
+    & .html > div {
+        background-image: linear-gradient(to right, black 80%, white 20%);
+
+}
+
+}
+
+.skills-cont-1, .skills-cont-2 {
+    text-align: center;
+    & h5 {
+        padding: 2rem 0;
+        font-size: 2.5rem;
+        font-weight: lighter;
+    }
+
+    & div {
+        height: 100%;
+        color: #525252;
+    }
+
+    & p {
+        color: #626262;
+    }
+
+    & i {
+        font-size: 5rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.skills-cont-1 {
+    grid-area: side-l-3;
+    & .interface-design {
+        background-color: #ECAE4E;
+        
+    }
+
+    & .media-strategy {
+        background-color: #FC673E ;
+    }
+}
+
+.skills-cont-2 {
+    grid-area: side-r-3;
+
+    & .mobile-app {
+        background-color: #161616;
+    }
+
+    & .coding {
+        background-color: #FFFFFF ;
+    }
+}
+
+
+
+
+
+
+.mobile-app {
+    grid-area: mobile-app;
+}
+
+.coding {
+    grid-area: coding;
+}
+
+.side-l-4 {
+    grid-area: side-l-4;
+    background-image: url("/Users/joel/Downloads/CODING/Test/TA-STYLE-CSS-Grid-THaaao/block-BHaacx/assets/media/experience-img.jpg");
+    background-position: center;
+    background-size: stretch;
+    background-repeat: no-repeat;
+    grid-template-rows: auto;
+}
+
+.side-r-4 {
+    grid-area: side-r-4;
+    background-color: #FC673E ;
+    color: white;
+
+
+    & h3 {
+        font-size: 4rem;
+        padding: 1rem 0;
+    }
+
+    & small {
+        display: inline-block;
+        color: white;
+        font-size: 1.5rem;
+        margin: 2rem 0;
+        padding-bottom: 4rem;
+        font-weight: lighter;
+    }
+
+    & i {
+        font-size: 3rem;
+    }
+
+    & h5 {
+        font-size: 2rem;
+        padding: 0 1.5rem;
+        font-weight: lighter;
+    }
+
+    & strong {
+        font-weight: bold;
+        color: black;
+        font-size: 1.5rem;
+    }
+
+    & span {
+        display: block;
+        width: 100%;
+        padding: 1rem 5.5rem;
+        padding-bottom: 2rem;
+        font-size: 1.8rem;
+        font-weight: lighter;
+    }
+}
+
+.side-l-5 {
+    grid-area: side-l-5;
+    background-color: #ECAE4E;
+    color: white;
+
+    & h3 {
+        font-size: 4rem;
+        padding: 1rem 0;
+    }
+
+    & small {
+        display: inline-block;
+        color: white;
+        font-size: 1.5rem;
+        margin: 2rem 0;
+        padding-bottom: 4rem;
+        font-weight: lighter;
+    }
+
+    & i {
+        font-size: 3rem;
+    }
+
+    & h5 {
+        font-size: 2rem;
+        padding: 0 1.5rem;
+        font-weight: lighter;
+    }
+
+    & strong {
+        font-weight: bold;
+        color: black;
+        font-size: 1.5rem;
+    }
+
+    & span {
+        display: block;
+        width: 100%;
+        padding: 1rem 5.5rem;
+        padding-bottom: 4rem;
+        font-size: 1.8rem;
+        font-weight: lighter;
+    }
+}
+
+
+.side-r-5 {
+    grid-area: side-r-5;
+    background-image: url("/Users/joel/Downloads/CODING/Test/TA-STYLE-CSS-Grid-THaaao/block-BHaacx/assets/media/education-img.jpg");
+    background-position: center;
+    background-size: stretch;
+    background-repeat: no-repeat;
+    grid-template-rows: auto;
+
+}
+
+.side-l-6 {
+    grid-area: side-l-6;
+    background-color:#FC673E;
+    color: white;
+
+    & small {
+        margin-bottom: 10rem;
+        opacity: 0.6;
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 4rem;
+        padding: 2rem 0;
+    }
+
+    & form {
+        width: 100%;
+    }
+
+    & form input[type=text], input[type=email],  input[type=textarea] {
+        border: none;
+        border-bottom: 1px solid gold;
+        margin-bottom: 3rem;
+        width: 100%;
+        padding: 1rem 0;
+        background-color: transparent;
+        color: white;
+    }
+     & form ::placeholder {
+        color: white;
+        opacity: 0.6;
+        font-size: 1.5rem;
+     }
+
+    & form input[type=text]:focus, input[type=email]:focus,  input[type=textarea]:focus {
+       outline: none;
+    }
+
+
+    & form input[type=textarea] {
+        padding-bottom: 15rem;
+    }
+
+    & form button {
+        display: inline-block;
+        background-color: white !important;
+        color: grey;
+        padding: 2rem 15rem;
+        border-radius: 4rem;
+        border: none;
+
+    }
+}
+
+.side-r-6 {
+    grid-area: side-r-6;
+    background-color: black;
+    color: white;
+    & figure {
+    background-image: url("/Users/joel/Downloads/CODING/Test/TA-STYLE-CSS-Grid-THaaao/block-BHaacx/assets/media/contact-img.jpg");
+    background-position: top;
+    background-size: stretch;
+    background-repeat: no-repeat;
+    content: "";
+    flex: 1 1 50%;
+    height: 100%;
+    }
+
+    & address {
+        flex: 1 1 50%;
+        height: 100%;
+    }
+    & strong {
+        opacity: 0.6;
+        font-size: 1.5rem;
+    }
+
+    & h4 {
+        font-size: 3rem;
+        padding: 2rem 0;
+        padding-top: 6rem;
+        font-weight: lighter;
+    } 
+    & .contact {
+        width: 100%;
+    }
+
+    & i {
+        padding: 2rem 1rem;
+        font-size: 2rem;
+    }
+
+    & a {
+        font-size: 1.5rem;
+        opacity: 0.6;
+        color: gold;
+        font-weight: lighter;
+    }
+
+    & .fa-phone ~ a {
+        color: grey;
+    }
+}
+
+.map {
+    grid-area: map;
+    background-color: #FC673E;
+    & iframe {
+        width: 80%;
+    }
+}
+
+footer {
+    height: 400px;
+    & ul {
+        padding: 2rem 3rem;
+    }
+
+    & small {
+        font-size: 2rem;
+        opacity: 0.5;
+        font-weight: lighter;
+        padding-bottom: 4rem;
+
+        & a {
+            color: gold;
+            font-weight: lighter;
+        }
+
+    } 
+
+    & ul li i {
+        padding: 0 2rem;
+        font-size: 2rem;
+        color: grey;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 8px;
+    }
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 3rem 5rem;
+
+         & strong a{
+            font-size: 15px;
+
+         }
+    }
+
+    header nav ul li a{
+        padding: 0 1rem;
+        font-size: 8px;
+
+    }
+    html {
+        font-size: 12px;
+    }
+
+    main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "side-l-1"
+        "side-l-1"
+        "side-l-1"
+        "side-l-1"
+        "side-r-1"
+        "side-r-1"
+        "side-r-1"
+        "side-r-1"
+        "side-l-2"
+        "side-l-2"
+        "side-l-2"
+        "side-r-2"
+        "side-r-2"
+        "side-l-3"
+        "side-l-3"
+        "side-l-3"
+        "side-r-3"
+        "side-r-3"
+        "side-r-3"
+        "side-l-4"
+        "side-l-4"
+        "side-l-4"
+        "side-r-4"
+        "side-r-4"
+        "side-r-4"
+        "side-l-5"
+        "side-l-5"
+        "side-l-5"
+        "side-l-5"
+        "side-r-5"
+        "side-r-5"
+        "side-r-5"
+        "side-l-6"
+        "side-l-6"
+        "side-l-6"
+        "side-l-6"
+        "side-l-6"
+        "side-r-6"
+        "side-r-6"
+        "side-r-6"
+        "side-r-6"
+        "map"
+        "map"
+        "map";
+
+    }
+    
+    .experiences, .education {
+
+        h5 {
+            font-size: 18px;
+        }
+        span {
+            font-size: 14px;
+        }
+    }
+}
